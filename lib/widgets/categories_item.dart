@@ -15,10 +15,15 @@ class Categories_item extends StatelessWidget {
         width: 200,
         height: 120,
         decoration: BoxDecoration(
-          borderRadius: const BorderRadius.all(Radius.circular(8)),
+          borderRadius: const BorderRadius.all(Radius.circular(10)),
+          color: const Color.fromARGB(255, 32, 37, 43),
           image: DecorationImage(
-            image: AssetImage(item.image),
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
+            colorFilter: ColorFilter.mode(
+                Colors.black.withOpacity(0.4), BlendMode.dstATop),
+            image: AssetImage(
+              item.image,
+            ),
           ),
         ),
         child: Text(
