@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
         body: CustomScrollView(
-          physics: ClampingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           slivers: [
             SliverToBoxAdapter(
               child: CategoriesList(),

@@ -1,0 +1,12 @@
+import 'package:flutter/material.dart';
+
+class ArticleModel {
+  final String? articleImage;
+  final String? articleAuther;
+  final String? articleTitle;
+  ArticleModel({
+    required this.articleImage,
+    required this.articleAuther,
+    required this.articleTitle,
+  });
+}
