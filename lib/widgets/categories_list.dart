@@ -6,7 +6,7 @@ class CategoriesList extends StatelessWidget {
   CategoriesList({super.key});
   List<Categorie_data> categorieD = [
     Categorie_data(image: 'assets/business.jpg', type: 'Business'),
-    Categorie_data(image: 'assets/Tecknology.jpg', type: 'Tecknology'),
+    Categorie_data(image: 'assets/Tecknology.jpg', type: 'Technology'),
     Categorie_data(image: 'assets/sports.jpg', type: 'Sports'),
     Categorie_data(image: 'assets/Health.jpg', type: 'Health'),
     Categorie_data(image: 'assets/science.jpg', type: 'Science'),
