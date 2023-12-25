@@ -4,6 +4,7 @@ import 'package:news_app/widgets/categories_item.dart';
 import 'package:news_app/widgets/categories_list.dart';
 import 'package:news_app/widgets/feed_item.dart';
 import 'package:news_app/widgets/feed_list.dart';
+import 'package:news_app/widgets/new_list_builder.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatelessWidget {
@@ -42,7 +43,7 @@ class HomePage extends StatelessWidget {
             SliverToBoxAdapter(
               child: CategoriesList(),
             ),
-            FeedList(),
+            const NewsListBuilder(),
           ],
         ));
   }
