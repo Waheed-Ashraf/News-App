@@ -9,4 +9,12 @@ class ArticleModel {
     required this.articleAuther,
     required this.articleTitle,
   });
+
+  factory ArticleModel.fromjson(json) {
+    return ArticleModel(
+      articleTitle: json['title'],
+      articleAuther: json['author'],
+      articleImage: json['urlToImage'],
+    );
+  }
 }
